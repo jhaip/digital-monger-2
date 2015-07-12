@@ -1,0 +1,158 @@
+# Pilam House Manager reminder/fining system
+# Spring 2015
+
+# capable of handling 1 or 2 mongers
+mongers:
+    - name: Scott Heng
+      email: sheng143@mit.edu
+    - name: Angel Echevarria
+      email: g4mrase@mit.edu
+flags:
+    shazams: true
+    dinner: true
+    trash: true
+    sendemails: false
+    addfinestodoc: false
+googledocs:
+    shazams: "Shazams Spring 2015"
+    shazamDutyRange: 'A3:A25'
+    trash: "Trash Duties Spring 2015"
+    dinner: "PLP Dinner Duty Sign-ups - SP15"
+    finedTag: "#fined"
+    completeTag: "#done"
+reminder:
+    subject: "[HOUSE MANAGER] Reminder to do your <weekday> <duty>"
+    message: |
+        Let a house manager know when you are done to get checked off.
+
+        ~ the mongers
+fine:
+    trash: 20
+    shazam: 40
+    dinner: 20
+    shazamDelay: 2
+    trashDelay: 1
+    dinnerDelay: 1
+    subject: "[HOUSE MANAGER] Missed <weekday> <duty> - $<fine> FINE"
+    message: |
+        <firstname>,
+
+        You did not get checked off for your <weekday> <duty> and so you have been fined $<fine>.
+        You can either accept the $<fine> fine or complete your duty by midnight and have a house manager check you off.
+
+        ~ the mongers
+brothers:
+    nicknametoname:
+        'aryan': 'Aryan Khojandi'
+        'nasir': 'Nasir Adaya'
+        'robert': 'Robert Luo'
+        'yiyang': 'Robert Luo'
+        'mike': 'Mike Fu'
+        'alex': 'Alex Chen'
+        'andre': 'Andre Kessler'
+        'anthony': 'Anthony Venegas'
+        'angel': 'Angel Echevarria'
+        'chris': 'Chris Maynor'
+        'conner': 'Conner Fromknecht'
+        'courage': 'Courage Cooper'
+        'daniel': 'Daniel Wang'
+        'david k': 'David Ke'
+        'david l': 'David Lu'
+        'edwin': 'Edwin Zhang'
+        'george': 'George Cheng'
+        'jacob': 'Jacob Haip'
+        'jake': 'Jacob Haip'
+        'jason': 'Jason Hu'
+        'maosen': 'Jason Hu'
+        'jeff': 'Jeff Chan'
+        'jemale': 'Jemale Lockett'
+        'kendall': 'Kendall Fears'
+        'kendall f': 'Kendall Fears'
+        'mario': 'Mario Rodriguez'
+        'martin': 'Martin Ma'
+        'ding': 'Martin Ma'
+        'ding ma': 'Martin Ma'
+        'phu': 'Phu Nguyen'
+        'rex': 'Rex Lam'
+        'scott': 'Scott Heng'
+        'steve': 'Steve Sullivan'
+        'sully': 'Steve Sullivan'
+        'supanat': 'Supanat Kamtue'
+        'phil': 'Supanat Kamtue'
+        'taylor': 'Taylor Farnham'
+        'benji': 'Benji Lin'
+        'kai': 'Kai Xiao'
+        'hongyi': 'Hongyi Shi'
+        'andrew': 'Andrew Xia'
+        'brandon': 'Brandon Axe'
+        'stuart': 'Stuart Finney'
+        'joseph': 'Joseph Park'
+        'jimmy': 'Jimmy Wu'
+        'shraman': 'Shraman Ray Chaudhuri'
+        'giri': 'Giri Anand'
+        'saarik': 'Saarik Kalia'
+        'adrian': 'Adrian Mora'
+        'tim': 'Tim Nguyen'
+        'cody': 'Cody Bratten'
+        'douglas': 'Douglas Chen'
+        'billy': 'Billy Moses'
+        'bishesh': 'Bishesh Khadha'
+        'kevin': 'Kevin Lu'
+        'simon': 'Simon Zheng'
+        'mark': 'Mark Chounlakone'
+        'brian': 'Brian Xu'
+        'ajay': 'Ajay Saini'
+        'sam': 'Sam Judd'
+    nametoemail:
+        'Aryan Khojandi': 'khojandi@mit.edu'
+        'Nasir Adaya ': 'adaya@mit.edu'
+        'Robert Luo': 'yluo15@mit.edu'
+        'Mike Fu': 'mikefu@mit.edu'
+        'Alex Chen': 'axc@mit.edu'
+        'Andre Kessler': 'akessler@mit.edu'
+        'Anthony Venegas': 'anthonyv@mit.edu'
+        'Angel Echevarria': 'g4mrase@mit.edu'
+        'Chris Maynor': 'maynorc@mit.edu'
+        'Conner Fromknecht': 'conner@mit.edu'
+        'Courage Cooper': 'ccoop@mit.edu'
+        'Daniel Wang': 'danwang@mit.edu'
+        'David Ke': 'davidke@mit.edu'
+        'David Lu': 'uldivad9@mit.edu'
+        'Edwin Zhang': 'edwinzg@mit.edu'
+        'George Cheng': 'chengg@mit.edu'
+        'Jacob Haip': 'jhaip@mit.edu'
+        'Jason Hu': 'mjhu@mit.edu'
+        'Jeff Chan': 'jeffchan@mit.edu'
+        'Jemale Lockett': 'jlockett@mit.edu'
+        'Kendall Fears': 'kfears@mit.edu'
+        'Mario Rodriguez': 'mariorod@mit.edu'
+        'Martin Ma': 'dingma@mit.edu'
+        'Phu Nguyen': 'phun@mit.edu'
+        'Rex Lam': 'rexsclam@mit.edu'
+        'Scott Heng': 'sheng143@mit.edu'
+        'Steve Sullivan': 'ssul@mit.edu'
+        'Supanat Kamtue': 'skamtue@mit.edu'
+        'Taylor Farnham': 'tfarnham@mit.edu'
+        'Benji Lin' : 'linb@mit.edu'
+        'Kai Xiao' : 'kaix@mit.edu'
+        'Hongyi Shi' : 'hongyis@mit.edu'
+        'Andrew Xia' : 'axia@mit.edu'
+        'Brandon Axe' : 'baxe@mit.edu'
+        'Stuart Finney' : 'stuartsf@mit.edu'
+        'Joseph Park' : 'psy01212@mit.edu'
+        'Jimmy Wu' : 'jimmywu@mit.edu'
+        'Shraman Ray Chaudhuri' : 'shraman@mit.edu'
+        'Giri Anand' : 'ganand@mit.edu'
+        'Saarik Kalia' : 'skalia@mit.edu'
+        'Adrian Mora' : 'admora@mit.edu'
+        'Tim Nguyen' : 'nguyen95@mit.edu'
+        'Cody Bratten': "cbratten@mit.edu"
+        'Douglas Chen': "dpchen@mit.edu"
+        'Billy Moses': "wmoses@mit.edu"
+        'Bishesh Khadha': "bkhadka@mit.edu"
+        'Kevin Lu': "kezilu@mit.edu"
+        'Simon Zheng': "szheng17@mit.edu"
+        'Mark Chounlakone': "mchoun95@mit.edu"
+        'Brian Xu': "bwxu@mit.edu"
+        'Ajay Saini': "ajays235@mit.edu"
+        'Sam Judd': "samjudd@mit.edu"
