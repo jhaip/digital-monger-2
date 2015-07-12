@@ -1,3 +1,9 @@
 FROM python:2.7
-COPY . /src
-CMD ["python", "/src/gspread-test.py"]
+
+RUN mkdir -p /usr/src/app
+
+COPY requirements.txt /usr/src/app/
+RUN pip install -r /usrc/src/app/requirements.txt
+
+COPY . /usr/src/app
+WORKDIR /usr/src/app
